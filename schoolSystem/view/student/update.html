@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/Bootstrap/css/bootstrap.min.css">
+    <script src="../../assets/Bootstrap/js/jquery.min.js"></script>
+    <script src="../../assets/Bootstrap/js/popper.min.js"></script>
+    <script src="../../assets/Bootstrap/js/bootstrap.js"></script>
+    <script src="../../assets/Bootstrap/js/bootstrap.min.js"></script>
+
+    <!---------------------css-------------------------->
+    <Style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box
+        }
+
+        .main {
+            background-image: url(../../assets/img/m.jpg);
+            background-position-x: center;
+            height: 755px;
+            color: whitesmoke;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            padding-top: 25px;
+
+        }
+
+
+        ul {
+            margin-left: auto;
+            padding: auto;
+            display: flex;
+        }
+
+        li {
+            color: rgb(139, 139, 139);
+            font-family: 'Roboto Mono', monospace;
+            list-style: none;
+            margin-left: auto;
+            justify-content: space-around;
+            margin-right: 45px;
+            padding-top: 12px;
+
+        }
+
+        .log {
+            font-family: 'Sacramento', cursive;
+            margin-left: 35px;
+            font-size: 20px;
+            padding-top: 5px;
+
+        }
+
+        .M {
+            font-size: 25px;
+        }
+
+
+
+        h5 {
+            font-family: 'Roboto Mono', monospace;
+            padding-right: 10px;
+            margin-top: 5px;
+        }
+
+        table {
+            height: 250px;
+            width: 500px;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="second">
+            <nav>
+                <div class="log">
+                    <h4><span class="M">S</span>chool System</h4>
+                </div>
+                <ul>
+                    <li><a href="../../index.php">Home</a></li>
+                    <li> <a href="addstudent.html">New Student</a></li>
+                    <li> <a href="deletestudent.html">Delete Student</a></li>
+                    <li><a href="update.html">Upadate Student</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container" style="margin-top: 100px;">
+            <h3>Update Details</h3>
+            <form action="../../controller/student/update.php" method="POST" class="container">
+                <table>
+                    <tr>
+                        <td> <label for="StudentId">Student ID</label></td>
+                        <td><input type="text" name="StudentId"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentFirstName">First Name</label></td>
+                        <td> <input type="text" name="studentFirstName"><br></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="studentLastName">Last Name</label></td>
+                        <td> <input type="text" name="studentLastName"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentPhoneNumber">Phone Number</label></td>
+                        <td><input type="text" name="studentPhoneNumber"><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="text-align:center;"><input type="submit"></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
